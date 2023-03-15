@@ -2,7 +2,7 @@
 
 :root {
   --line: #222;
-  --skin: #fca;
+  --skin: #fdd6ad;
   --hair: #963;
   --shadow: #5002;
 }
@@ -23,7 +23,7 @@ body {
 
 .container {
   position: absolute;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 h1 {
@@ -96,7 +96,7 @@ h1 {
 
 /* ears */
 
-/* .ear {
+.ear {
   position: absolute;
   width: 6%;
   height: 25%;
@@ -106,10 +106,10 @@ h1 {
   box-shadow: -0.125vmin -0.25vmin;
   top: 42%;
   left: 20%;
-  transform: rotate(-15deg) translate(200px, 100px);
+  transform: rotate(-5deg) translate(-30px, 10px);
 }
 
-.ear::before {
+/* .ear::before {
   content: "";
   display: block;
   width: 5vmin;
@@ -120,7 +120,7 @@ h1 {
   top: 47%;
   left: 38%;
   position: absolute;
-}
+} */
 
 .ear::after {
   content: "";
@@ -139,6 +139,11 @@ h1 {
 
 .ear + .ear {
   left: auto;
-  right: 21%;
-  transform: scaleX(-1) rotate(-17deg) translate(180px, 100px);
+  right: 120px;
+  transform: rotate(10deg) translateY(20px);
+}
+
+/* .ear + .ear::before {
+  left: 33%;
 } */
+
