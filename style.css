@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --line: #222;
+  --skin: #fca;
+  --hair: #963;
+  --shadow: #5002;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Bebas Neue", cursive;
+  background: #0c3b5a;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+/* hair */
+
+.hair {
+  width: 450px;
+  height: 150px;
+  background: #942;
+  border-radius: 150px 150px 50px 50px;
+  border: 1px solid black;
+  position: relative;
+  top:10px;
+}
+/* Face */
+.face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  background-color: var(--skin);
+  border-radius: 50px 50px 150px 150px;
+}
+
+/* Eyes */
+.eyes {
+  display: flex;
+}
+
+.eye {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-color: #fff;
+  margin: 50px 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 15px #f5af19,
+    inset 0 0 25px white;
+}
+.eye::before {
+  content: "";
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  border: 10px solid #52442a;
+  box-sizing: border-box;
+}
+
+/* Nose */
+
+.nose {
+  width: 20%;
+  height: 12%;
+  border-radius: 50%;
+  box-shadow: 0.5vmin -0.5vmin;
+  background: var(--skin);
+}
+
+/* mouth */
+
+.mouth {
+  width: 50%;
+  height: 12%;
+  border-radius: 100%;
+  box-shadow: -0.5vmin 1.4vmin 0 -1vmin;
+  transform: rotate(5deg);
+}
+
+/* ears */
+
+/* .ear {
+  position: absolute;
+  width: 6%;
+  height: 25%;
+  background: var(--skin);
+  border: 0.5vmin solid;
+  border-radius: 100% / 50% 50% 20% 120%;
+  box-shadow: -0.125vmin -0.25vmin;
+  top: 42%;
+  left: 20%;
+  transform: rotate(-15deg) translate(200px, 100px);
+}
+
+.ear::before {
+  content: "";
+  display: block;
+  width: 5vmin;
+  height: 5vmin;
+  border: 0.5vmin solid;
+  border-left-width: 0.85vmin;
+  border-radius: 50%;
+  top: 47%;
+  left: 38%;
+  position: absolute;
+}
+
+.ear::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 70%;
+  border: 0.5vmin solid;
+  border-left: 0.25vmin solid var(--skin);
+  border-radius: 70%;
+  top: 15%;
+  left: 10%;
+  position: absolute;
+  transform: rotate(-5deg);
+  box-shadow: inset -6vmin 1vmin var(--shadow);
+}
+
+.ear + .ear {
+  left: auto;
+  right: 21%;
+  transform: scaleX(-1) rotate(-17deg) translate(180px, 100px);
+} */
