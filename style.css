@@ -15,18 +15,15 @@
 
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
   font-family: "Bebas Neue", cursive;
   background: #0c3b5a;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
+  margin-top: 100px;
 }
 
 h1 {
@@ -34,31 +31,15 @@ h1 {
   color: white;
   text-align: center;
 }
-/* hair */
-
-.hair {
-  width: 450px;
-  height: 150px;
-  background: #942;
-  border-radius: 150px 150px 50px 50px;
-  border: 1px solid black;
-  position: relative;
-  top:10px;
-}
-/* Face */
-.face {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  height: 500px;
-  background-color: var(--skin);
-  border-radius: 50px 50px 150px 150px;
-}
+/* svg */
 
 /* Eyes */
 .eyes {
   display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .eye {
@@ -89,21 +70,28 @@ h1 {
 /* Nose */
 
 .nose {
-  width: 20%;
-  height: 12%;
+  width: 120px;
+  height: 70px;
   border-radius: 50%;
-  box-shadow: 0.5vmin -0.5vmin;
-  background: var(--skin);
+  box-shadow: 0.5vmin 0.5vmin;
+  background: #fdd6ad;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
 }
 
 /* mouth */
 
 .mouth {
-  width: 50%;
-  height: 12%;
+  position: absolute;
+  width: 150px;
+  height: 120px;
   border-radius: 100%;
   box-shadow: -0.5vmin 1.4vmin 0 -1vmin;
-  transform: rotate(5deg);
+  top: 50%;
+  left: 50%;
+  transform: rotate(5deg) translate(-50%,150%);
 }
 
 /* ears */
